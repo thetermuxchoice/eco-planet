@@ -3274,7 +3274,7 @@ main .breathe-about h3 {
   object-position: top;
 }
 
-h1, .slide-content .title {
+.h1, .slide-content .title {
   /*margin-bottom: 1.5rem;*/
   margin-top: 23.5rem;
   font-size: 13rem;
