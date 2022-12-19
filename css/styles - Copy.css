@@ -1,0 +1,2166 @@
+/*~~~~~~ TIPOS ~~~~~~*/
+@font-face {
+  font-family: 'Neue Montreal Thin';
+  src: url('../fonts/PPNeueMontreal-Thin.html') format('woff2'), url('../fonts/PPNeueMontreal-Thin.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('../fonts/PPNeueMontreal-Book.html') format('woff2'), url('../fonts/PPNeueMontreal-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Montreal Medium';
+  src: url('../fonts/PPNeueMontreal-Medium.html') format('woff2'), url('../fonts/PPNeueMontreal-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/*~~~~~~ RUTAS Y COLORES ~~~~~~*/
+/*~~~~~~ BREAKPOINTS ~~~~~~*/
+/*~~~~~~ CLASES LESS ~~~~~~*/
+/*~~~~~~ RESETS ~~~~~~*/
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  min-height: 100%;
+}
+html,
+body,
+div,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+tt,
+var,
+dl,
+dt,
+dd,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: #374236;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  font-style: inherit;
+  vertical-align: baseline;
+  font-size: 13px;
+}
+@media (min-width: 1921px) {
+  html,
+  body,
+  div,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  font,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  sub,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    font-size: 16px;
+  }
+}
+:focus {
+  outline: 0;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+img,
+iframe {
+  border: none;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+input,
+textarea,
+select,
+button {
+  font-size: 100%;
+  font-family: inherit;
+}
+@media (max-width: 1921px) {
+  .container {
+    /*max-width: 1040px;*/
+    max-width: 1260px;
+  }
+}
+/*~~~~~~ BUTTONS ~~~~~~*/
+.no-btn {
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal Medium';
+  border: none;
+  display: inline-block;
+  padding: 0.875rem 2rem;
+}
+.no-btn:hover {
+  color: inherit;
+}
+.no-btn:active,
+.no-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media screen and (max-width: 720px) {
+  .no-btn {
+    font-weight: inherit;
+    color: #1D1C20;
+    font-size: 0.875rem;
+    font-family: 'Neue Montreal Medium';
+    padding: 0.65rem 1.5rem;
+  }
+}
+.btn:not(.dropdown-toggle) {
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal Medium';
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  border: none;
+  /*border-radius: 90px;*/
+  transition: all 0.3s;
+  /*background-color: #46DC78;*/
+  z-index: 1;
+  position: relative;
+  width: auto!important;
+  background: #24B3AA;
+  border-radius: 26.5px 0px;
+  font-weight: 400;
+}
+@media screen and (max-width: 720px) {
+  .btn:not(.dropdown-toggle) {
+    font-weight: inherit;
+    color: #1D1C20;
+    font-size: 0.875rem;
+    font-family: 'Neue Montreal Medium';
+    padding: 0.65rem 1.5rem;
+  }
+}
+.btn:not(.dropdown-toggle) img {
+  display: inline-block;
+  vertical-align: text-bottom;
+  max-height: 16px;
+  margin-left: 10px;
+  margin-right: -10px;
+  vertical-align: initial;
+}
+@media screen and (max-width: 720px) {
+  .btn:not(.dropdown-toggle) img {
+    margin-left: 8px;
+    margin-right: -8px;
+    max-height: 14px;
+    vertical-align: middle;
+  }
+}
+.btn:not(.dropdown-toggle).back img {
+  margin-right: 10px;
+  margin-left: -10px;
+}
+.btn:not(.dropdown-toggle):hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 16px rgba(0, 0, 0, 0.1);
+}
+.btn:not(.dropdown-toggle).dark {
+  background: #374236;
+  color: #F0F0F0;
+}
+.btn:not(.dropdown-toggle).border-dark {
+  background: transparent;
+  border: solid 1px #1D1C20;
+  color: #1D1C20;
+}
+.btn:not(.dropdown-toggle).border-light {
+  /*background: transparent;
+  border: solid 1px #F0F0F0;
+  color: #F0F0F0;*/
+  color: #000000;
+  background: #24B3AA;
+  border-radius: 26.5px 0px;
+}
+button[type=submit].btn.btn-dark {
+  border-color: #374236;
+  color: #F0F0F0;
+}
+.btn:focus {
+  box-shadow: none;
+}
+/*~~~~~~ GENERAL ~~~~~~*/
+@media screen and (max-width: 720px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .slick-mobile {
+    padding-left: 4.875rem;
+    padding-right: 3.9rem;
+  }
+  .slick-mobile .slick-list {
+    overflow-y: inherit;
+  }
+  .container.pre-slide-mobile {
+    margin-top: 55vh!important;
+  }
+}
+.container.overright {
+  max-width: calc(((100% - 1320px) / 2) + 1320px) !important;
+  margin: 2rem auto 4rem;
+  margin-right: 0;
+  padding-right: 0;
+}
+@media screen and (max-width: 720px) {
+  .container.overright {
+    margin: 1rem auto 3rem;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1921px) {
+  .container.overright {
+    /*max-width: calc(((100% - 1040px) / 2) + 1040px) !important;*/
+    
+    max-width: calc(((100% - 1260px) / 2) + 1260px) !important;
+  }
+}
+.container.overright > div:not(.tab-content) {
+  border-bottom: solid 1px #374236;
+  min-height: 1px;
+}
+.container.overright > div:not(.tab-content).white {
+  border-bottom-color: #F0F0F0;
+}
+.container.overleft {
+  max-width: calc(((100% - 1320px) / 2) + 1320px) !important;
+  margin: 2rem auto 4rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+@media screen and (max-width: 720px) {
+  .container.overleft {
+    margin: 1rem auto 3rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 1921px) {
+  .container.overleft {
+    max-width: calc(((100% - 1040px) / 2) + 1040px) !important;
+  }
+}
+.container.overleft > div {
+  border-bottom: solid 1px #374236;
+  min-height: 1px;
+}
+.container.overleft > div.white {
+  border-bottom-color: #F0F0F0;
+}
+h2 {
+  font-weight: inherit;
+  color: #374236;
+  font-size: 0.875rem;
+  font-family: 'Neue Montreal Medium';
+}
+@media screen and (max-width: 720px) {
+}
+h2.white {
+  color: #F0F0F0;
+}
+h3 {
+  font-weight: inherit;
+  color: #374236;
+  font-size: 7rem;
+  font-family: 'Neue Montreal Medium';
+  line-height: 100%;
+  margin-bottom: 3.5rem;
+}
+@media screen and (max-width: 720px) {
+  h3 {
+    font-size: 2.95rem;
+    margin-bottom: 2rem;
+  }
+}
+h3.white {
+  color: #F0F0F0;
+}
+h3.green {
+  color: #46DC78;
+}
+p.subtit {
+  font-weight: inherit;
+  color: #374236;
+  font-size: 1.75rem;
+  font-family: 'Neue Montreal';
+  line-height: 130%;
+}
+@media screen and (max-width: 720px) {
+  p.subtit {
+    font-size: 1.125rem;
+  }
+}
+p.subtit.white {
+  color: #F0F0F0;
+}
+section.content {
+  padding: 12.5rem 0 5.5rem;
+}
+@media screen and (max-width: 720px) {
+  section.content {
+    padding-top: 7rem;
+  }
+}
+.mt-10 {
+  margin-top: 10rem!important;
+}
+header {
+  opacity: 0;
+  transition: all 0.35s;
+  backdrop-filter: blur(6px) opacity(0);
+  -webkit-backdrop-filter: blur(6px) opacity(0);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+header .light-logo {
+  display: none;
+  padding: 11px 0;
+}
+header .light-logo path {
+  fill: #F0F0F0;
+}
+header .dark-logo {
+  display: block;
+  padding: 11px 0;
+}
+header .dark-logo path {
+  fill: #374236;
+}
+header.light .light-logo {
+  display: none;
+}
+header.light .dark-logo {
+  display: block;
+}
+header.fixed {
+  opacity: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 16px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  header.fixed {
+    background: transparent;
+    backdrop-filter: blur(30px) opacity(1);
+    -webkit-backdrop-filter: blur(30px) opacity(1);
+  }
+  header.light .light-logo {
+    display: block;
+  }
+  header.light .dark-logo {
+    display: none;
+  }
+}
+header.e404 {
+  opacity: 1;
+}
+@media screen and (max-width: 720px) {
+  header img {
+    max-width: 120px;
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 5px;
+  }
+  25%,
+  75% {
+    bottom: 8px;
+  }
+  50% {
+    bottom: 12px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+main {
+  top: 0;
+}
+main section {
+  position: relative;
+}
+main .home_hero {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 720px) {
+}
+main .home_hero .slick-slide {
+  width: 100vw;
+  height: 100vh;
+  background: center center no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 720px) {
+}
+main .home_hero .slick-slide video,
+main .home_hero .slick-slide iframe {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+  top: 0;
+}
+main .home_hero .slick-slide p {
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 2rem;
+  font-family: 'Neue Montreal';
+  text-align: center;
+}
+@media screen and (max-width: 720px) {
+  main .home_hero .slick-slide p {
+    bottom: 90px;
+  }
+}
+main .home {
+  /*background: #F0F0F0;*/
+  background: linear-gradient(79.29deg, #000202 5.49%, #020D11 75.79%);
+  background-attachment: fixed;
+  margin-top: 100vh;
+}
+main .home h1 {
+  font-weight: inherit;
+  color: #374236;
+  font-size: 7.5rem;
+  font-family: 'Neue Montreal Medium';
+  line-height: 110%;
+  margin-bottom: 3.5rem;
+}
+@media screen and (max-width: 720px) {
+  main .home h1 {
+    font-size: 3rem;
+  }
+}
+main .home h1 > span {
+  display: block;
+  color: #788A6E;
+}
+main .home p {
+  font-weight: inherit;
+  color: #374236;
+  font-size: 2rem;
+  font-family: 'Neue Montreal';
+  line-height: 130%;
+}
+@media screen and (max-width: 720px) {
+  main .home p {
+    font-size: 1.125rem;
+  }
+}
+main .home p > strong {
+  font-weight: inherit;
+  color: #788A6E;
+  font-size: 2rem;
+  font-family: 'Neue Montreal Medium';
+}
+@media screen and (max-width: 720px) {
+  main .home p > strong {
+    font-size: 1.125rem;
+  }
+}
+main .home.e404 {
+  margin-top: 0;
+  background: #374236;
+}
+main .home.e404 h1 {
+  color: #F0F0F0;
+}
+main .home.e404 p {
+  color: #F0F0F0;
+}
+main .home.e404 p a {
+  color: #F0F0F0;
+  text-decoration: underline;
+}
+main .home.e404 p a:hover {
+  text-decoration: none;
+}
+main .home.jump {
+  -webkit-animation: bounce 1s infinite;
+}
+@media screen and (max-width: 720px) {
+  main .home {
+    background-size: auto 26vh;
+  }
+}
+main .solution {
+  background-color: #374236;
+}
+main .solution .slick-slide img {
+  display: inline-block;
+}
+main .solution #img-mobile-slider-solution {
+  margin: 30px auto;
+  max-width: 150px;
+  right: -16px;
+  position: relative;
+}
+@media screen and (max-width: 720px) {
+  main .solution .mt-10 {
+    margin-top: 2rem!important;
+  }
+  main .solution .rsArrow.rsArrowRight {
+    left: inherit!important;
+    right: 0;
+  }
+  main .solution .rsArrow.rsArrowRight .rsArrowIcn {
+    width: 60px;
+    background-position: top right!important;
+    right: 0;
+    left: inherit;
+  }
+  main .solution .rsArrow.rsArrowLeft {
+    right: inherit;
+    left: 0!important;
+  }
+  main .solution .rsArrow.rsArrowLeft .rsArrowIcn {
+    width: 60px;
+  }
+}
+main .platformbranches {
+  background-color: #F0F0F0;
+}
+@media screen and (max-width: 720px) {
+  main .platformbranches {
+    overflow-x: hidden;
+  }
+}
+main .platformbranches .nav,
+main .infografia .nav {
+  margin: 3rem 0 2.5rem;
+}
+main .platformbranches .nav .nav-item,
+main .infografia .nav .nav-item {
+  border-bottom: solid 1px #a8b3a2;
+}
+main .platformbranches .nav .nav-item a,
+main .infografia .nav .nav-item a {
+  font-weight: inherit;
+  color: #788A6E;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal Medium';
+  line-height: 150%;
+  opacity: 0.6;
+}
+main .platformbranches .nav .nav-item a.active,
+main .infografia .nav .nav-item a.active {
+  color: #374236;
+  border-bottom: solid 2px #46DC78;
+  margin-bottom: -1px;
+  opacity: 1;
+}
+main .platformbranches .slicker {
+  padding-bottom: 5.5rem;
+}
+main .platformbranches .slicker .slick-slide {
+  opacity: 0.7;
+}
+@media screen and (max-width: 720px) {
+  main .platformbranches .slicker .slick-slide .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+main .platformbranches .slicker .slick-slide .flip-card {
+  position: relative;
+}
+@media screen and (max-width: 720px) {
+  main .platformbranches .slicker .slick-slide .flip-card {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+main .platformbranches .slicker .slick-slide .flip-card .card {
+  background: url('../images/bg-climatcoin.jpg') top center no-repeat transparent;
+  background-size: cover;
+  border: none;
+  border-radius: 7px;
+  padding: 5rem 6.8rem;
+  min-height: 43rem;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card .blur {
+  /* Add the blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: absolute;
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card h4 {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 14px;
+  font-family: 'Neue Montreal Medium';
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: solid 1px #F0F0F0;
+  position: relative;
+  z-index: 5;
+  opacity: 0.6;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card h3 {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 5rem;
+  font-family: 'Neue Montreal Medium';
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 5;
+  opacity: 0.6;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card p {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 1.75rem;
+  font-family: 'Neue Montreal';
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 5;
+  opacity: 0.6;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card p.botonera {
+  position: absolute;
+  left: 6.8rem;
+  bottom: 5rem;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card p:last-child {
+  margin-bottom: 0;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card.back {
+  background: #46DC78 !important;
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  left: 100%;
+  opacity: 0;
+  transition: 1s;
+  z-index: 9;
+  margin: 0 12px;
+}
+@media (max-width: 1921px) {
+  main .platformbranches .slicker .slick-slide .flip-card .card.back {
+    margin: 0 9px;
+  }
+}
+main .platformbranches .slicker .slick-slide .flip-card .card.back h3 {
+  font-size: 2rem;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card.back h3,
+main .platformbranches .slicker .slick-slide .flip-card .card.back h4,
+main .platformbranches .slicker .slick-slide .flip-card .card.back p {
+  color: #374236;
+  border-color: #374236;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card.back h3.botonera,
+main .platformbranches .slicker .slick-slide .flip-card .card.back h4.botonera,
+main .platformbranches .slicker .slick-slide .flip-card .card.back p.botonera {
+  bottom: 7rem;
+  left: 7.5rem;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card.back ol {
+  margin-right: 60px;
+  position: relative;
+  counter-reset: item;
+  list-style-type: none;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card.back ol li {
+  padding-left: 50px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card.back ol li:before {
+  content: "0" counter(item) "  ";
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+}
+main .platformbranches .slicker .slick-slide .flip-card .card.back.active {
+  left: 0;
+  opacity: 1;
+}
+@media screen and (max-width: 720px) {
+  main .platformbranches .slicker .slick-slide .flip-card .card {
+    padding: 2rem;
+    min-height: 28rem;
+  }
+  main .platformbranches .slicker .slick-slide .flip-card .card h4 {
+    padding-bottom: 1rem;
+    font-family: 'Neue Montreal Medium';
+  }
+  main .platformbranches .slicker .slick-slide .flip-card .card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  main .platformbranches .slicker .slick-slide .flip-card .card p {
+    font-size: 1.125rem;
+  }
+  main .platformbranches .slicker .slick-slide .flip-card .card p.botonera {
+    position: absolute;
+    left: 2rem;
+    bottom: 3rem;
+  }
+}
+main .platformbranches .slicker .slick-slide .flip-card.climat .card {
+  background: url('../images/bg-climat.jpg') top center no-repeat transparent;
+  background-size: cover;
+}
+main .platformbranches .slicker .slick-slide .flip-card.co2fund .card {
+  background: url('../images/bg-co2fund.jpg') top center no-repeat transparent;
+  background-size: cover;
+}
+main .platformbranches .slicker .slick-slide .flip-card.crowdlending .card {
+  background: url('../images/bg-climatecrowd.jpg') top center no-repeat transparent;
+  background-size: cover;
+}
+main .platformbranches .slicker .slick-slide .flip-card.dmrvr .card {
+  background: url('../images/bg-dmrv.jpg') top center no-repeat transparent;
+  background-size: cover;
+}
+@media screen and (max-width: 720px) {
+  main .platformbranches .slicker .slick-slide .flip-card > div {
+    min-height: 22rem;
+  }
+}
+main .platformbranches .slicker .slick-slide.slick-current {
+  opacity: 1;
+}
+main .platformbranches .slicker .slick-slide.slick-current .card .blur {
+  backdrop-filter: none;
+}
+main .platformbranches .slicker .slick-slide.slick-current .card h4,
+main .platformbranches .slicker .slick-slide.slick-current .card h3,
+main .platformbranches .slicker .slick-slide.slick-current .card p {
+  opacity: 1;
+}
+@media screen and (max-width: 720px) {
+  main .platformbranches .slicker .slick-slide.slick-current .card h4 {
+    font-size: 0.875rem;
+  }
+}
+main .platformbranches .slicker .slick-dots {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 2rem 4rem;
+}
+main .platformbranches .slicker .slick-dots li {
+  display: inline-block;
+  width: 19%;
+  border-bottom: solid 2px;
+  margin: 0 0.5%;
+}
+main .platformbranches .slicker .slick-dots li button {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  main .platformbranches .slicker {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+  }
+}
+main .infografia {
+  background-color: #1D1C20;
+}
+@media screen and (max-width: 720px) {
+  main .infografia {
+    overflow-x: hidden;
+  }
+}
+main .infografia h3 {
+  color: #F0F0F0;
+}
+main .infografia .nav {
+  margin-bottom: 4rem;
+}
+main .infografia .nav .nav-item {
+  width: 33%;
+}
+main .infografia .nav .nav-item a {
+  color: #F0F0F0;
+  opacity: 0.4;
+}
+main .infografia .nav .nav-item a.active {
+  color: #F0F0F0;
+}
+main .infografia .leyenda {
+  font-size: 28px;
+  color: #F0F0F0;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+@media screen and (max-width: 720px) {
+  main .infografia .leyenda {
+    display: none;
+  }
+}
+main .infografia .slicker .slick-slide {
+  opacity: 0.2;
+}
+main .infografia .slicker .slick-slide.slick-current {
+  opacity: 1;
+}
+@media screen and (max-width: 720px) {
+  main .infografia .slicker .slick-slide img {
+    width: 100%!important;
+  }
+}
+@media screen and (max-width: 720px) {
+  main .infografia .slicker .rsArrow.rsArrowLeft {
+    left: 20vw!important;
+    width: 60px;
+    height: 28px;
+  }
+  main .infografia .slicker .rsArrow.rsArrowLeft .rsArrowIcn {
+    background-size: cover;
+    width: 60px;
+    height: 28px;
+  }
+  main .infografia .slicker .rsArrow.rsArrowRight {
+    right: 20vw!important;
+    left: inherit!important;
+    width: 60px;
+    height: 28px;
+  }
+  main .infografia .slicker .rsArrow.rsArrowRight .rsArrowIcn {
+    background-position: center right;
+    background-size: cover;
+    width: 60px;
+    height: 28px;
+  }
+}
+main .infografia .slider-nav .slick-slide.slick-current div div {
+  color: #F0F0F0;
+}
+main .modal .modal-dialog {
+  margin: 0;
+  height: 100vh;
+}
+main .modal .modal-dialog .modal-content {
+  height: 95vh;
+  top: 5vh;
+  border-radius: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: #46DC78;
+  border: 0;
+}
+main .modal .modal-dialog .modal-content .modal-body {
+  padding: 0 2rem 2rem;
+}
+main .modal .modal-dialog .modal-content button.btn-close {
+  margin: 2rem 0 2rem 85vw;
+  padding: 0;
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+main .modal .modal-dialog .modal-content h4 {
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 0.875rem;
+  font-family: 'Neue Montreal Medium';
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: solid 1px #1D1C20;
+}
+main .modal .modal-dialog .modal-content h3 {
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 2rem;
+  font-family: 'Neue Montreal Medium';
+  margin-bottom: 2rem;
+  line-height: 110%;
+}
+main .modal .modal-dialog .modal-content p {
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal';
+  margin-bottom: 2rem;
+}
+main .modal .modal-dialog .modal-content p:last-child {
+  margin-bottom: 0;
+}
+main .modal .modal-dialog .modal-content ol li {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal';
+}
+main .modal.team:not(.advisors) .btn-close {
+  background: url('../images/close-white.svg') top left no-repeat transparent;
+  background-size: cover;
+}
+main .modal.team .modal-dialog .modal-content {
+  background: #374236;
+}
+main .modal.team .modal-dialog .modal-content h5 {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 2rem;
+  font-family: 'Neue Montreal Medium';
+  margin-bottom: 1rem;
+}
+main .modal.team .modal-dialog .modal-content p {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal Medium';
+}
+@media screen and (max-width: 720px) {
+  main .modal.team .modal-dialog .modal-content p {
+    font-family: 'Neue Montreal';
+  }
+}
+main .modal.team .modal-dialog .modal-content p.card-text {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 0.875rem;
+  font-family: 'Neue Montreal Medium';
+  margin-bottom: 2rem;
+}
+main .modal.team.advisors .modal-dialog .modal-content {
+  background: #F0F0F0;
+}
+main .modal.team.advisors .modal-dialog .modal-content h5,
+main .modal.team.advisors .modal-dialog .modal-content p,
+main .modal.team.advisors .modal-dialog .modal-content p.card-text {
+  color: #374236;
+}
+main .theteam {
+  /*background-color: #788A6E;*/
+  background: linear-gradient(79.29deg, #000202 5.49%, #020D11 75.79%);
+}
+main .theteam .nav {
+  margin: 3rem 0 2.5rem;
+}
+main .theteam .nav .nav-item {
+  border-bottom: solid 1px #a8b3a2;
+}
+main .theteam .nav .nav-item a {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal Medium';
+  line-height: 150%;
+  opacity: 0.6;
+  -webkit-appearance: initial;
+}
+main .theteam .nav .nav-item a.active {
+  color: #F0F0F0;
+  border-bottom: solid 2px #46DC78;
+  opacity: 1;
+  margin-bottom: -1px;
+}
+@media screen and (max-width: 720px) {
+  main .theteam .nav {
+    margin-bottom: 0;
+  }
+}
+main .theteam .slicker {
+  border-radius: 7px;
+  padding-bottom: 5.5rem;
+}
+main .theteam .slicker .slick-slide {
+  border-radius: 7px;
+}
+main .theteam .slicker .slick-slide .flip-card {
+  padding: 1rem 0.8rem 0;
+  position: relative;
+}
+main .theteam .slicker .slick-slide .flip-card .card {
+  background-color: #1f1c2c;
+  min-height: 39.7rem;
+  border-radius: 7px;
+  border: none;
+  overflow: hidden;
+}
+main .theteam .slicker .slick-slide .flip-card .card .blur {
+  /* Add the blur effect */
+  backdrop-filter: none;
+  position: absolute;
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+main .theteam .slicker .slick-slide .flip-card .card .card-body {
+  /*background-color: #374236;*/
+  background-color: #1F1C2C;
+  padding: 4.3rem;
+  flex: 0;
+  min-height: 21rem;
+  box-sizing: inherit;
+  z-index: 2;
+}
+main .theteam .slicker .slick-slide .flip-card .card .card-body h5 {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 2rem;
+  font-family: 'Neue Montreal Medium';
+}
+main .theteam .slicker .slick-slide .flip-card .card .card-body p {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal';
+  margin-top: 25px;
+  line-height: 130%;
+}
+main .theteam .slicker .slick-slide .flip-card .card .card-body p.botonera {
+  position: absolute;
+  left: 4.3rem;
+  bottom: 5rem;
+}
+main .theteam .slicker .slick-slide .flip-card .card .card-body p:last-child {
+  margin-bottom: 0;
+}
+main .theteam .slicker .slick-slide .flip-card .card .card-body p.card-text {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 0.875rem;
+  font-family: 'Neue Montreal Medium';
+  margin-top: 0;
+}
+main .theteam .slicker .slick-slide .flip-card .card.back {
+  position: absolute;
+  left: 0.8rem;
+  max-width: calc(100% - 1.6rem);
+  top: 100%;
+  opacity: 0;
+  transition: 1s;
+  z-index: 9;
+}
+main .theteam .slicker .slick-slide .flip-card .card.back .btn img {
+  margin-left: -10px;
+  margin-right: 10px;
+}
+main .theteam .slicker .slick-slide .flip-card .card.back.active {
+  top: 1rem;
+  opacity: 1;
+}
+@media screen and (max-width: 720px) {
+  main .theteam .slicker .slick-slide .flip-card .card {
+    min-height: 30rem;
+  }
+  main .theteam .slicker .slick-slide .flip-card .card .card-body {
+    padding: 2rem;
+  }
+  main .theteam .slicker .slick-slide .flip-card .card .card-body p {
+    font-size: 1.125rem;
+  }
+  main .theteam .slicker .slick-slide .flip-card .card .card-body p.botonera {
+    position: absolute;
+    left: 2rem;
+    bottom: 3rem;
+  }
+  main .theteam .slicker .slick-slide .flip-card .card h4 {
+    padding-bottom: 1rem;
+    font-family: 'Neue Montreal Medium';
+  }
+  main .theteam .slicker .slick-slide .flip-card .card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+main .theteam .slicker .slick-slide .flip-card.advisors-group .card,
+main .theteam .slicker .slick-slide .flip-card.advisors-group .card-body {
+  /*background-color: #F0F0F0;*/
+  background-color: #1F1C2C;
+}
+main .theteam .slicker .slick-slide .flip-card.advisors-group .card h5,
+main .theteam .slicker .slick-slide .flip-card.advisors-group .card-body h5,
+main .theteam .slicker .slick-slide .flip-card.advisors-group .card p,
+main .theteam .slicker .slick-slide .flip-card.advisors-group .card-body p,
+main .theteam .slicker .slick-slide .flip-card.advisors-group .card p.card-text,
+main .theteam .slicker .slick-slide .flip-card.advisors-group .card-body p.card-text {
+  /*color: #374236;*/
+  color: #F0F0F0;
+}
+@media screen and (max-width: 720px) {
+  main .theteam .slicker .slick-slide > div {
+    min-height: 22rem;
+  }
+}
+main .theteam .slicker .slick-slide.slick-current + .slick-slide + .slick-slide .card .blur,
+main .theteam .slicker .slick-slide.hasblur .card .blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+@media screen and (max-width: 720px) {
+  main .theteam .slicker {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+  main .theteam .slicker .rsArrow {
+    bottom: -10px;
+  }
+  main .theteam .slicker .rsArrow.rsArrowRight {
+    left: inherit!important;
+    right: 38px;
+  }
+  main .theteam .slicker .rsArrow.rsArrowLeft {
+    right: inherit;
+    left: 38px!important;
+  }
+}
+main .breathe {
+  background: url('../images/bg-breathe.jpg') center center no-repeat transparent;
+  background-size: cover;
+  background-attachment: initial;
+  max-width: 100vw;
+  height: 50vh;
+}
+
+main .breathe-about {
+  background: url('../images/bg-breathe-about.png') center center no-repeat transparent;
+  background-size: cover;
+  background-attachment: initial;
+  max-width: 100vw;
+  height: 80vh;
+}
+@media screen and (max-width: 720px) {
+  main .breathe {
+    background: url('../images/breathe-mobile.jpg') center center no-repeat transparent;
+    background-size: cover;
+    /*height: 100vh;*/
+    height: 50vh;
+  }
+  main .breathe-about {
+    background: url('../images/breathe-mobile.jpg') center center no-repeat transparent;
+    background-size: cover;
+    /*height: 100vh;*/
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 1920px) {
+  main .breathe {
+    background: url('../images/bg-breathe.jpg') center center no-repeat transparent;
+    /*background-size: contain;
+    background-attachment: initial;
+    height: auto;*/
+    background-size: cover;
+    background-attachment: initial;
+    height: 50vh;
+  }
+  main .breathe-about {
+    background: url('../images/bg-breathe-about.png') center center no-repeat transparent;
+    /*background-size: contain;
+    background-attachment: initial;
+    height: auto;*/
+    background-size: cover;
+    background-attachment: initial;
+    height: 80vh;
+  }
+
+}
+main .problem {
+  background-color: #F0F0F0;
+}
+main .problem h3 {
+  color: #788A6E;
+}
+main .problem #img-mobile-slider-problem {
+  margin: 30px auto;
+  max-width: 150px;
+  right: -16px;
+  position: relative;
+}
+@media screen and (max-width: 720px) {
+  main .problem .mt-10 {
+    margin-top: 2rem!important;
+  }
+  main .problem .rsArrow.rsArrowRight {
+    left: inherit!important;
+    right: 0;
+  }
+  main .problem .rsArrow.rsArrowRight .rsArrowIcn {
+    width: 60px;
+    background-position: top right!important;
+    right: 0;
+    left: inherit;
+  }
+  main .problem .rsArrow.rsArrowLeft {
+    right: inherit;
+    left: 0!important;
+  }
+  main .problem .rsArrow.rsArrowLeft .rsArrowIcn {
+    width: 60px;
+  }
+}
+main .why {
+  /*background: url('../images/why-climatecoin.jpg') top right no-repeat transparent;
+  background-size: cover;*/
+  background:#1F1C2C;
+  padding-bottom: 7.5rem;
+}
+main .why .move {
+  margin-top: 18rem;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 720px) {
+  main .why .move {
+    margin: 0;
+  }
+}
+main .why .card {
+  background: linear-gradient(111.65deg, rgba(242, 239, 237, 0.25) 8%, rgba(239, 239, 239, 0.05) 95%);
+  background-blend-mode: overlay;
+  backdrop-filter: blur(10px);
+  border: none;
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 4.375rem 5rem;
+}
+@media screen and (max-width: 720px) {
+  main .why .card {
+    padding: 2.5rem 2rem;
+    margin-bottom: 0.75rem !important;
+  }
+}
+main .why .card h4 {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 14px;
+  font-family: 'Neue Montreal';
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: solid 1px #F0F0F0;
+}
+@media screen and (max-width: 720px) {
+  main .why .card h4 {
+    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+main .why .card h3 {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 3rem;
+  font-family: 'Neue Montreal Medium';
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 720px) {
+  main .why .card h3 {
+    font-size: 2rem;
+  }
+  main .why .card h3 img {
+    max-width: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+main .why .card p {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal';
+  line-height: 130%;
+  margin-bottom: 2rem;
+}
+main .why .card p:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 720px) {
+  main .why .card p:last-child {
+    margin-bottom: 2rem;
+  }
+}
+main .why .mt-10 {
+  margin-top: 7.5rem !important;
+}
+@media screen and (max-width: 720px) {
+  main .why {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+  main .why .mt-10 {
+    margin-top: 2rem!important;
+  }
+}
+main .how {
+  background: #F0F0F0;
+}
+main .how .col-container {
+  display: table;
+  width: 100%;
+}
+main .how .col-container > div {
+  display: table-cell;
+}
+@media screen and (max-width: 720px) {
+  main .how .col-container {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+  main .how .col-container > div {
+    display: block;
+  }
+}
+main .how .boxes {
+  background: #46DC78;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 2.5rem;
+  height: 100%;
+  min-height: 40.5rem;
+  box-sizing: content-box;
+  padding: 5rem 4.375rem;
+  border-radius: 6px;
+}
+@media (max-width: 1921px) {
+  main .how .boxes {
+    min-height: 42.5rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  main .how .boxes {
+    padding: 2.5rem 2rem;
+    margin: 2.5rem 0.7rem 2rem;
+  }
+  main .how .boxes .btn {
+    width: 47%!important;
+    margin-bottom: 1rem;
+  }
+}
+main .how .boxes * {
+  opacity: 1!important;
+}
+main .how .boxes h3 {
+  font-size: 3rem;
+  color: #F0F0F0;
+  line-height: 110%;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 720px) {
+  main .how .boxes h3 {
+    font-size: 2rem;
+  }
+}
+main .how .boxes h4 {
+  font-weight: inherit;
+  color: #F0F0F0;
+  font-size: 14px;
+  font-family: 'Neue Montreal Medium';
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  border-bottom: solid 1px #F0F0F0;
+}
+main .how .boxes p {
+  font-size: 1.125rem;
+  line-height: auto;
+  margin-bottom: 2.5rem;
+  color: #F0F0F0;
+}
+main .how .boxes:not(.light) h3,
+main .how .boxes:not(.light) h4,
+main .how .boxes:not(.light) p {
+  color: #374236;
+  border-color: #374236;
+}
+main .how .boxes.light {
+  background: #374236;
+}
+main .how .boxes form input[type=text],
+main .how .boxes form input[type=email] {
+  padding: 14px 32px;
+  max-width: 100%;
+  background: #F0F0F0;
+  border: 1px solid #F0F0F0;
+  border-radius: 90px;
+  color: #374236;
+}
+main .how .boxes form input[type=text]:focus,
+main .how .boxes form input[type=email]:focus {
+  outline: 0;
+  box-shadow: none;
+}
+@media screen and (max-width: 720px) {
+  main .how .boxes form input[type=text],
+  main .how .boxes form input[type=email] {
+    padding: 8px 22px;
+  }
+}
+main .how .boxes form .form-check {
+  margin-bottom: 2.5rem;
+}
+main .how .boxes form .form-check label {
+  font-size: 0.875rem;
+}
+main .how .boxes form .form-check label a {
+  text-decoration: underline;
+}
+main .how .boxes form .form-check label a:hover {
+  color: inherit;
+}
+@media screen and (max-width: 720px) {
+  main .how .boxes form .form-check label {
+    max-width: calc(100% - 20px);
+  }
+}
+main .how .boxes form .form-check .form-check-input[type=checkbox] {
+  border-radius: 0;
+  width: 1.375rem;
+  height: 1.375rem;
+  background-color: transparent;
+  border: solid 1px #1D1C20;
+  margin-right: 13px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+main .how .boxes form .form-check .form-check-input[type=checkbox]:checked {
+  background-color: transparent;
+  border-color: #1D1C20;
+  background-image: url('../images/check.svg');
+  background-size: 74% auto;
+}
+main .how .boxes form .form-check .form-check-input[type=checkbox]:focus {
+  outline: 0;
+  box-shadow: none;
+}
+main .how .boxes form .required {
+  font-weight: inherit;
+  color: #374236;
+  font-size: 0.875rem;
+  font-family: 'Neue Montreal';
+  margin: 0.25rem 2rem 0.9375rem;
+}
+main .how .boxes form.was-validated .form-control:invalid {
+  border-color: #EF413F;
+  color: #EF413F;
+}
+main .how .boxes form.was-validated .form-control:invalid::placeholder {
+  color: #EF413F;
+}
+main .how .boxes form.was-validated .form-control:invalid + .required {
+  color: #EF413F;
+}
+main .how .boxes form.was-validated .form-check-input:invalid ~ .form-check-label,
+main .how .boxes form.was-validated .form-check-input:invalid ~ .form-check-label a {
+  color: #A20F0D;
+}
+main .how .boxes form.was-validated .form-check-input:invalid {
+  border-color: #A20F0D !important;
+}
+main .how .slicker .slick-dots {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0rem 4rem;
+  text-align: center;
+}
+main .how .slicker .slick-dots li {
+  display: inline-block;
+  width: 22%;
+  border-bottom: solid 2px;
+  margin: 0 0.5%;
+}
+main .how .slicker .slick-dots li button {
+  display: none;
+}
+main .slicker {
+  padding-bottom: 3.5rem;
+}
+main .slicker .image-slide img {
+  width: 440px;
+  margin-right: 3rem;
+}
+@media (max-width: 1921px) {
+  main .slicker .image-slide img {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 720px) {
+  main .slicker {
+    padding-bottom: 4rem;
+  }
+  main .slicker .image-slide {
+    margin-top: 3rem;
+  }
+  main .slicker .image-slide img {
+    max-width: 70vw;
+  }
+}
+main .slicker h4 {
+  font-weight: inherit;
+  color: #374236;
+  font-size: 5rem;
+  font-family: 'Neue Montreal Medium';
+  line-height: 110%;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 720px) {
+  main .slicker h4 {
+    font-size: 2rem;
+  }
+}
+main .slicker p {
+  font-weight: inherit;
+  color: #374236;
+  font-size: 1.75rem;
+  font-family: 'Neue Montreal';
+  line-height: 130%;
+}
+@media screen and (max-width: 720px) {
+  main .slicker p {
+    font-size: 1.125rem;
+  }
+}
+main .slicker .slick-dots {
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: 10px;
+}
+@media screen and (max-width: 720px) {
+  main .slicker .slick-dots {
+    left: -50px;
+  }
+}
+main .slicker .slick-dots li {
+  text-align: left;
+  opacity: 0.4;
+}
+main .slicker .slick-dots li.slick-active {
+  opacity: 1;
+}
+main .slicker .slick-dots li button {
+  border: none;
+  background: none;
+  font-weight: inherit;
+  color: #374236;
+  font-size: 14px;
+  font-family: 'Neue Montreal Medium';
+  padding: 0;
+}
+main .slicker .slick-dots li button:focus {
+  outline: 0;
+  border: 0;
+}
+main .slicker .rsArrow,
+main .slicker .rsArrowIcn {
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+main .slicker .rsArrow.rsArrowLeft .rsArrowIcn,
+main .slicker .rsArrowIcn.rsArrowLeft .rsArrowIcn {
+  background: url('../images/arrow-left.svg') center left no-repeat transparent;
+  background-size: 100% auto;
+}
+main .slicker .rsArrow.rsArrowRight,
+main .slicker .rsArrowIcn.rsArrowRight {
+  left: 180px;
+}
+main .slicker .rsArrow.rsArrowRight .rsArrowIcn,
+main .slicker .rsArrowIcn.rsArrowRight .rsArrowIcn {
+  background: url('../images/arrow-right.svg') center left no-repeat transparent;
+  background-size: 100% auto;
+}
+main .slicker .rsArrow.slick-disabled,
+main .slicker .rsArrowIcn.slick-disabled {
+  opacity: 0.25;
+}
+main .slicker.white p,
+main .slicker.white h4,
+main .slicker.white li button {
+  color: #F0F0F0;
+}
+main .slicker.white .rsArrowLeft .rsArrowIcn {
+  background: url('../images/arrow-left-white.svg') center left no-repeat transparent;
+  background-size: 100% auto;
+}
+main .slicker.white .rsArrowRight .rsArrowIcn {
+  background: url('../images/arrow-right-white.svg') center left no-repeat transparent;
+  background-size: 100% auto;
+}
+footer {
+  background-color: #1D1C20;
+  padding: 5.5rem 0;
+  position: relative;
+}
+@media screen and (max-width: 720px) {
+  footer {
+    padding: 2.5rem 0;
+  }
+  footer img {
+    width: 121px;
+    margin-bottom: 3rem;
+  }
+}
+footer .copyright div {
+  border-top: solid 1px #f0f0f08f;
+  margin-top: 110px;
+  padding-top: 32px;
+}
+@media screen and (max-width: 720px) {
+  footer .copyright div {
+    margin-top: 4rem;
+  }
+}
+footer p {
+  color: #F0F0F0;
+  opacity: 0.5;
+}
+footer a {
+  color: #F0F0F0;
+  line-height: 2.2rem;
+  opacity: 0.5;
+}
+footer a:hover {
+  color: #F0F0F0;
+  opacity: 1;
+}
+@media screen and (max-width: 720px) {
+  footer a {
+    font-size: 0.875rem;
+  }
+}
+footer .social-mobile i {
+  font-size: 24px;
+}
+.cookies {
+  position: fixed;
+  bottom: 3.5rem;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  font-size: 1.125rem;
+  padding: 0 30px;
+}
+.cookies .container {
+  background: #F0F0F0;
+  padding: 2.8rem 3rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.cookies .container a.link {
+  text-decoration: underline;
+}
+.cookies .container a.link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 720px) {
+  .cookies .container {
+    padding: 2.5rem 1.25rem;
+    font-size: 0.875rem;
+  }
+  .cookies .container .no-btn {
+    margin-top: 32px;
+  }
+}
+.modal.popuplegales .modal-dialog {
+  max-width: 700px;
+  max-height: 500px;
+  min-height: inherit;
+  transform: translate(0, -50%);
+  top: 50%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 720px) {
+  .modal.popuplegales .modal-dialog {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+.modal.popuplegales .modal-dialog .modal-content {
+  background-color: #F0F0F0;
+  border: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 16px rgba(0, 0, 0, 0.1);
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-header {
+  border-bottom: 0;
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-header button.btn-close {
+  margin: 9px 16px 8px auto;
+  padding: 0;
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body {
+  padding: 0 2rem 0 4.375rem;
+  margin-bottom: 2.25rem;
+  margin-right: 2.375rem;
+}
+@media screen and (max-width: 720px) {
+  .modal.popuplegales .modal-dialog .modal-content .modal-body {
+    padding: 0 1.25rem 0 0;
+    margin: 0 2rem 2.25rem;
+    word-break: break-word;
+  }
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body h4 {
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 3rem;
+  font-family: 'Neue Montreal Medium';
+  line-height: 110%;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 720px) {
+  .modal.popuplegales .modal-dialog .modal-content .modal-body h4 {
+    font-size: 2rem;
+  }
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body ul {
+  padding-left: 2rem;
+  list-style: square;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 720px) {
+  .modal.popuplegales .modal-dialog .modal-content .modal-body ul {
+    padding-left: 1rem;
+  }
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body ul li {
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal';
+  line-height: 130%;
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body p {
+  font-weight: inherit;
+  color: #1D1C20;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal';
+  line-height: 130%;
+  margin-bottom: 2rem;
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body p + ul {
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body .table {
+  margin-top: 2rem;
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body .table th {
+  font-family: 'Neue Montreal Medium';
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body .table th:first-child {
+  width: 8.2rem;
+}
+@media screen and (max-width: 720px) {
+  .modal.popuplegales .modal-dialog .modal-content .modal-body .table th:first-child {
+    width: auto;
+    min-width: 50%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .modal.popuplegales .modal-dialog .modal-content .modal-body ul li,
+  .modal.popuplegales .modal-dialog .modal-content .modal-body p {
+    font-size: 0.875rem;
+  }
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body strong {
+  font-family: 'Neue Montreal Medium';
+}
+.modal.popuplegales .modal-dialog .modal-content .modal-body a {
+  color: inherit;
+  text-decoration: underline;
+}
+.backdrop-blur {
+  background: linear-gradient(111.65deg, rgba(242, 239, 237, 0.5) 8.14%, rgba(239, 239, 239, 0.08) 95.69%);
+  background-blend-mode: overlay;
+  backdrop-filter: blur(104px);
+}
+.backdrop-blur.show {
+  opacity: 1;
+}
+.slider-nav .slick-list {
+  overflow: visible;
+}
+.slider-nav .slick-list .slick-track {
+  border-bottom: solid 1px #a8b3a2;
+}
+.slider-nav .slick-slide {
+  text-align: center;
+  margin-top: 3rem;
+}
+.slider-nav .slick-slide div div {
+  font-weight: inherit;
+  color: #788A6E;
+  font-size: 1.125rem;
+  font-family: 'Neue Montreal Medium';
+  line-height: 150%;
+  opacity: 0.6;
+}
+@media screen and (max-width: 720px) {
+  .slider-nav .slick-slide div div {
+    font-size: 0.875rem;
+  }
+}
+.slider-nav .slick-slide.slick-current div div {
+  color: #374236;
+  border-bottom: solid 2px #46DC78;
+  margin-bottom: -1px;
+  opacity: 1;
+}
+/*~~~~~~ FIN GENERAL ~~~~~~*/
+.home-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+}
+
+.home-img1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  margin: 0px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  .home-img{
+    margin-top: 55px;
+    }
+
+    .home-img1{
+      margin-top: 55px;
+      }
+}
+
+.home-img-d{
+  display: flex;
+  align-items: center;
+}
+
+.btn-home-img{
+  margin-top: 50px;
+}
+
+.div-title{
+  padding: 223px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+}
+
+main .breathe-about h3 {
+  color: #F0F0F0;
+}
+
+.infog-01{
+  width: 420px;
+  height: 420px;
+  background: #24B3AA;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 28px solid #1d1c20;
+  outline: 1px solid #ffff;
+  margin-top: 20px;
+}
+.infog-02{
+  width: 480px;
+  height: 480px;
+  background: #24B3AA;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin: 70px auto;
+}
+@media screen and (max-width: 400px) {
+  .infog-01{
+    width: 270px;
+    height: 270px;
+    float: left;
+  }
+  .infog-02{
+    width: 300px;
+    height: 300px;
+    float: right;
+  }
+  .infog-h1-01 {
+    height: auto;
+    color: white;
+    margin: 20px auto !important;
+    font-size: 22px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+  .infog-h1-02 {
+    height: auto;
+    color: white;
+    margin: 85px auto !important;
+    font-size: 22px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 450px) {
+  .infog-01{
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+  .infog-02{
+    width: 320px;
+    height: 320px;
+    float: right;
+  }
+  .infog-h1-01 {
+    height: auto;
+    color: white;
+    margin: 20px auto !important;
+    font-size: 29px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+  .infog-h1-02 {
+    height: auto;
+    color: white;
+    margin: 85px auto !important;
+    font-size: 29px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+  
+}
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  .infog-01{
+    width: 320px;
+    height: 320px;
+    float: left;
+  }
+  .infog-02{
+    width: 350px;
+    height: 350px;
+    float: right;
+  }
+  .infog-h1-01 {
+    height: auto;
+    color: white;
+    margin: 20px auto !important;
+    font-size: 32px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+  .infog-h1-02 {
+    height: auto;
+    color: white;
+    margin: 85px auto !important;
+    font-size: 32px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .infog-01{
+    width: 320px;
+    height: 320px;
+    float: left;
+  }
+  .infog-02{
+    width: 350px;
+    height: 350px;
+    float: right;
+  }
+  .infog-h1-01 {
+    height: auto;
+    color: white;
+    margin: 20px auto !important;
+    font-size: 34px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+  .infog-h1-02 {
+    height: auto;
+    color: white;
+    margin: 85px auto !important;
+    font-size: 34px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .infog-01{
+    width: 360px;
+    height: 360px;
+  }
+  .infog-02{
+    width: 380px;
+    height: 380px;
+  }
+  .infog-h1-01 {
+    height: auto;
+    color: white;
+    margin: 20px auto !important;
+    font-size: 40px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+  .infog-h1-02 {
+    height: auto;
+    color: white;
+    margin: 85px auto !important;
+    font-size: 40px !important;
+    text-align: center;
+    font-weight: 900;
+  }
+}
+
+
+.infog-h1-01{
+  height: auto;
+  color: white;
+  margin: 70px auto;
+  font-size: 41px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.infog-h1-02{
+  height: auto;
+  color: white;
+  margin: 120px auto;
+  font-size: 41px;
+  text-align: center;
+  font-weight: 900;
+}
+
