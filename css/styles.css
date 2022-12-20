@@ -1982,7 +1982,8 @@ footer .social-mobile i {
   padding-bottom: 300px;
 }
 .timeline-container .vertical-scrollable-timeline {
-  width: 50%;
+  /*width: 50%;*/
+  width:369px;
   list-style-type: none;
   /*margin-left: 400px;*/
 }
@@ -2560,6 +2561,10 @@ main .theteam1 .slicker .slick-slide.hasblur .card .blur {
     position: static;
     height: 100px;
   }
+
+  .timeline-container .vertical-scrollable-timeline {
+    width:260px;
+  }
   
 }
 
@@ -2657,6 +2662,10 @@ main .theteam1 .slicker .slick-slide.hasblur .card .blur {
     width: 100%;
     position: static;
     height: 100px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline {
+    width:260px;
   }
 
 
