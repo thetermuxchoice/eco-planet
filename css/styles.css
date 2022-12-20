@@ -1388,6 +1388,16 @@ main .why .card p {
   font-family: 'Inter';
   line-height: 130%;
   margin-bottom: 2rem;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
 }
 main .why .card p:last-child {
   margin-bottom: 0;
