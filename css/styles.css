@@ -2511,8 +2511,9 @@ main .theteam1 .slicker .slick-slide.hasblur .card .blur {
     font-size: 4rem;
   }
   .home-img{
-    width: 300px;
-    height: 300px;
+    /*width: 300px;
+    height: 262px;*/
+    width: 100%;
     margin: 55px auto 0px auto !important;
   }
   .infog-01{
@@ -2608,8 +2609,9 @@ main .theteam1 .slicker .slick-slide.hasblur .card .blur {
 @media screen and (min-width: 401px) and (max-width: 450px) {
 
   .home-img{
-    width: 280px;
-    height: 280px;
+    /*width: 280px;
+    height: 242px;*/
+    width: 100%;
     margin: 55px auto 0px auto !important;
   }
 
@@ -2711,8 +2713,9 @@ main .theteam1 .slicker .slick-slide.hasblur .card .blur {
 @media screen and (min-width: 450px) and (max-width: 550px) {
 
   .home-img{
-    width: 300px;
-    height: 300px;
+    /*width: 300px;
+    height: 300px;*/
+    width: 100%;
     margin: 55px auto 0px auto !important;
   }
 
@@ -2812,8 +2815,9 @@ main .theteam1 .slicker .slick-slide.hasblur .card .blur {
 @media screen and (min-width: 550px) and (max-width: 768px) {
 
   .home-img{
-    width: 350px;
-    height: 350px;
+    /*width: 350px;
+    height: 312px;*/
+    width: 100%;
     margin: 55px auto 0px auto !important;
   }
 
@@ -2914,8 +2918,9 @@ main .theteam1 .slicker .slick-slide.hasblur .card .blur {
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 
   .home-img{
-    width: 250px;
-    height: 250px;
+    /*width: 250px;
+    height: 212px;*/
+    width: 100%;
     margin: 0px auto 0px auto !important;
   }
 
