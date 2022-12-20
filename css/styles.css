@@ -2469,6 +2469,18 @@ main .theteam1 .slicker .slick-slide.hasblur .card .blur {
   width: 67%;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: rgba(0, 128, 0, 0);
+  opacity: 0.75;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 128, 0);
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 400px) {
   .title-h3 {
     font-size: 4rem;
