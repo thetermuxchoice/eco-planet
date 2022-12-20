@@ -2098,10 +2098,35 @@ main .breathe-space{
 
 
 .home-img{
-  width: 410px;
+  /*width: 410px;
   height: 410px;
-  border-radius: 50%;
+  border-radius: 50%;*/
+  /*animation-duration: 3s;
+  animation-name: slidein;*/
+  -webkit-animation: 10s rotate linear infinite;
+  animation: 10s rotate linear infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
+
+/*@keyframes slidein {
+  from {
+    margin-left: 100%;
+    
+  }
+
+  to {
+    margin-left: 0%;
+    
+  }
+}*/
+
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+
+
 
 .green-image1{
   background-image: url(../images/green1.jpg);
@@ -3185,3 +3210,5 @@ nav ul li a:not(:only-child):after {
 #nav-boton.activo span:before {
   transform: rotate(45deg);
 }
+
+
