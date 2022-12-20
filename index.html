@@ -18,7 +18,6 @@
    <link rel="stylesheet" href="css/styles.css" />
    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-
    <title>Eco Planet</title>
 </head>
 
@@ -88,9 +87,11 @@
       <section class="slide-header">
          <div class="home_hero">
             <div>
-               <video src="images/climatecoin_video_home.mp4" class="d-none d-md-block"  muted loop playsinline></video>
+               <!--<video src="images/climatecoin_video_home.mp4" class="d-none d-md-block"  muted loop playsinline></video>
                <video src="images/climatecoin_video_home_mobile.mp4" class="d-block d-md-none"  muted loop playsinline></video>
-               <p>Scroll down</p>
+               <p>Scroll down</p>-->
+
+           <iframe src="animacion/index.html" frameborder="0"></iframe>
             </div>
          </div>
       </section>
@@ -2268,6 +2269,7 @@
                }
             }
          ]
+         
       }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
          init(nextSlide);
       });
