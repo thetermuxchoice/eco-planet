@@ -589,7 +589,58 @@
                                     <div class="update-bar"></div>
                                 </div>
                             </model-viewer>-->
-                           <img src="../images/mundo.png" style="width:100%;height: auto;" />
+                            <style>
+                              /*@keyframes rotate {from {transform: rotate(0deg);}
+                                 to {transform: rotate(90deg);}}
+                              @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+                              to {-webkit-transform: rotate(90deg);}}
+
+                              @keyframes rotate1 {from {transform: rotate(0deg);}
+                                 to {transform: rotate(-90deg);}}
+                              @-webkit-keyframes rotate1 {from {-webkit-transform: rotate(0deg);}
+                              to {-webkit-transform: rotate(-90deg);}}
+                              .mundo{
+                                 -webkit-animation: 3s rotate linear infinite;
+                                 animation: 3s rotate linear infinite;
+                                 -webkit-animation: 6s rotate1 linear infinite;
+                                 animation: 6s rotate1 linear infinite;
+                                 -webkit-transform-origin: 100% 100%;
+                                 transform-origin: 100% 100%;
+                              }*/
+
+                              @keyframes myanimation {
+                              0%   {
+                                 -webkit-transform: rotate(20deg);
+                                 -moz-transform: rotate(20deg);
+                                 -o-transform: rotate(20deg);
+                                 -ms-transform: rotate(20deg);
+                                 transform: rotate(20deg);
+                              }
+                              50%  {
+                                 -webkit-transform: rotate(40deg);
+                                 -moz-transform: rotate(40deg);
+                                 -o-transform: rotate(40deg);
+                                 -ms-transform: rotate(40deg);
+                                 transform: rotate(40deg);
+                              }
+                              100%  {
+                                 -webkit-transform: rotate(20deg);
+                                 -moz-transform: rotate(20deg);
+                                 -o-transform: rotate(20deg);
+                                 -ms-transform: rotate(20deg);
+                                 transform: rotate(20deg);
+                              }
+                           }
+
+                           .mundo {
+                           width: 100%;   
+                           animation-name: myanimation;
+                           animation-duration: 10s;
+                           animation-iteration-count: infinite;
+                           }
+                            </style>
+                              <img class="mundo" src="../images/mundo.png"/>
+              
                             
                            </div>
                         </div>
