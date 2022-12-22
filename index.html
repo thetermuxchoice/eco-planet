@@ -12,11 +12,17 @@
    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
    <script src="kit.fontawesome.com/3a2d405d41.js" crossorigin="anonymous"></script>
 
-   <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+   <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="images/favicon_io/favicon.ico">
+   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon_io/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="36x36" href="images/favicon_io/android-chrome-192x192.png">
+   <link rel="icon" type="image/png" sizes="36x36" href="images/favicon_io/android-chrome-512x512.png">
+
    <link href="unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="css/slick.css" />
    <link rel="stylesheet" href="css/styles.css" />
    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
 
    <title>Eco Planet</title>
 </head>
@@ -26,59 +32,29 @@
    <header class="fixed-top">
       <div class="container">
          <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
-            <div class="col-6 text-decoration-none">
-               <a href="#">
-                  <img src="images/logo.png" class="light-logo" style="width: 250px;height: auto;" />
-                  <img src="images/logo.png" class="dark-logo" style="width: 250px;height: auto;" />
-                  <!-- <svg width="312" height="47" viewBox="0 0 312 47" class="light-logo" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <g clip-path="url(#clip0_264_1775)">
-                        <path d="M152.592 25.3226H160.356V46.472H164.671V25.3226H172.611V21.3482H152.592V25.3226ZM138.98 21.3482L130.014 46.472H134.665L136.842 40.0108H145.916L148.02 46.472H152.654L143.88 21.3539L138.98 21.3482ZM138.101 36.1102L141.419 26.3389L144.612 36.1386L138.101 36.1102ZM89.4645 46.438H93.7803V21.3539H89.4645V46.438ZM72.5187 21.3198H68.1972V46.438H84.9728V42.4636H72.496L72.5187 21.3198ZM113.046 39.5566L105.991 21.3198H100.467V46.438H104.783V28.8257L111.31 46.472H114.815L121.337 28.8257V46.472H125.659V21.3539H120.112L113.046 39.5566ZM46.34 33.8789C46.34 28.116 50.3723 24.8514 55.4141 24.8514C58.01 24.9032 60.5437 25.6565 62.7471 27.0316V22.7449C60.3734 21.503 57.7405 20.8397 55.0625 20.8088C48.0074 20.8088 42.0469 25.7314 42.0469 33.8675C42.0469 41.8163 48.0471 46.9263 55.346 46.9263C57.9865 46.9077 60.5843 46.2575 62.9229 45.0299V40.7773C60.7948 42.1213 58.3484 42.8757 55.8338 42.9632C50.7296 42.9632 46.3571 39.5509 46.3571 33.93L46.34 33.8789ZM181.396 35.639H193.187V31.6646H181.413V25.3226H195.347V21.3482H177.097V46.4664H195.625V42.492H181.413L181.396 35.639ZM282.282 38.8696L270.208 21.3539H265.751V46.472H270.072L270.106 28.7292L282.282 46.472H286.655V21.3539H282.339L282.282 38.8696ZM254.737 46.4209H259.053V21.3539H254.737V46.4209ZM203.395 33.8789C203.395 28.116 207.433 24.8514 212.469 24.8514C215.065 24.9041 217.598 25.6573 219.802 27.0316V22.7449C217.428 21.505 214.795 20.8418 212.117 20.8088C205.062 20.8088 199.073 25.7314 199.073 33.8675C199.073 41.8163 205.074 46.9263 212.378 46.9263C215.019 46.9077 217.617 46.2575 219.955 45.0299V40.7773C217.81 42.1011 215.351 42.8301 212.832 42.8894C207.767 42.9632 203.412 39.5509 203.412 33.93L203.395 33.8789ZM236.663 20.8202C229.12 20.8202 223.681 26.3049 223.681 33.8789C223.681 41.453 229.12 46.9376 236.663 46.9376C244.205 46.9376 249.65 41.4586 249.65 33.8789C249.65 26.2992 244.228 20.8599 236.68 20.8599L236.663 20.8202ZM236.663 42.9235C231.61 42.9235 227.963 39.1251 227.963 33.8902C227.963 28.6554 231.61 24.8627 236.663 24.8627C241.716 24.8627 245.368 28.6554 245.368 33.8902C245.368 39.1251 241.733 42.9632 236.68 42.9632L236.663 42.9235ZM309.068 21.3142L306.799 29.1721H306.76L304.531 21.3142H301.65V31.6248H303.487V23.7669H303.555C303.555 23.7669 303.986 25.4702 304.349 26.6909L305.824 31.6646H307.735L309.21 26.6909C309.607 25.3907 310.038 23.7669 310.038 23.7669H310.111V31.6646H311.983V21.3539L309.068 21.3142ZM291.487 23.0175H294.731V31.6362H296.744V23.0459H299.983V21.3425H291.476L291.487 23.0175Z" />
-                        <path d="M5.31185 17.7031C5.11982 16.9054 5.02273 16.0879 5.02261 15.2674C5.02261 12.5501 6.10082 9.94415 8.02004 8.02276C9.93925 6.10137 12.5423 5.02196 15.2565 5.02196C17.9706 5.02196 20.5736 6.10137 22.4929 8.02276C24.4121 9.94415 25.4903 12.5501 25.4903 15.2674C25.4911 16.0883 25.3921 16.9062 25.1954 17.7031H30.2995C30.4318 16.8979 30.4981 16.0833 30.498 15.2674C30.421 11.2685 28.7801 7.45936 25.9281 4.65858C23.076 1.85779 19.2402 0.288818 15.2451 0.288818C11.25 0.288818 7.41425 1.85779 4.56216 4.65858C1.71007 7.45936 0.0692133 11.2685 -0.00781235 15.2674C-0.00792956 16.0833 0.0584591 16.8979 0.190686 17.7031H5.31185Z" />
-                        <path d="M17.7604 34.9178V30.3132C20.4698 29.852 23.0053 28.6692 25.1008 26.889C27.1963 25.1088 28.7746 22.7968 29.6701 20.1956H24.203C23.5274 21.4263 22.6072 22.5055 21.4992 23.3667C20.3912 24.228 19.1188 24.853 17.7604 25.2033V20.2126H12.73V25.2033C11.371 24.8564 10.0973 24.2346 8.98738 23.3763C7.87744 22.518 6.95474 21.4414 6.27608 20.2126H0.820312C1.71837 22.8107 3.29779 25.1191 5.39311 26.8962C7.48844 28.6732 10.0226 29.8534 12.73 30.3132V34.9008C10.1058 35.4783 7.75685 36.9345 6.07099 39.029C4.38513 41.1235 3.4632 43.731 3.45746 46.4209H8.47655C8.52751 44.6591 9.26238 42.9866 10.5251 41.7585C11.7879 40.5304 13.4791 39.8434 15.2396 39.8434C17 39.8434 18.6912 40.5304 19.954 41.7585C21.2167 42.9866 21.9516 44.6591 22.0026 46.4209H27.016C27.0083 43.736 26.0874 41.1338 24.405 39.0429C22.7226 36.952 20.3791 35.4971 17.7604 34.9178Z" />
-                     </g>
-                     <defs>
-                        <clipPath id="clip0_264_1775">
-                           <rect width="312" height="47" fill="white" />
-                        </clipPath>
-                     </defs>
-                  </svg> -->
-                  <!-- <svg width="312" height="47" viewBox="0 0 312 47" class="dark-logo" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <g clip-path="url(#clip0_264_1775)">
-                        <path d="M152.592 25.3226H160.356V46.472H164.671V25.3226H172.611V21.3482H152.592V25.3226ZM138.98 21.3482L130.014 46.472H134.665L136.842 40.0108H145.916L148.02 46.472H152.654L143.88 21.3539L138.98 21.3482ZM138.101 36.1102L141.419 26.3389L144.612 36.1386L138.101 36.1102ZM89.4645 46.438H93.7803V21.3539H89.4645V46.438ZM72.5187 21.3198H68.1972V46.438H84.9728V42.4636H72.496L72.5187 21.3198ZM113.046 39.5566L105.991 21.3198H100.467V46.438H104.783V28.8257L111.31 46.472H114.815L121.337 28.8257V46.472H125.659V21.3539H120.112L113.046 39.5566ZM46.34 33.8789C46.34 28.116 50.3723 24.8514 55.4141 24.8514C58.01 24.9032 60.5437 25.6565 62.7471 27.0316V22.7449C60.3734 21.503 57.7405 20.8397 55.0625 20.8088C48.0074 20.8088 42.0469 25.7314 42.0469 33.8675C42.0469 41.8163 48.0471 46.9263 55.346 46.9263C57.9865 46.9077 60.5843 46.2575 62.9229 45.0299V40.7773C60.7948 42.1213 58.3484 42.8757 55.8338 42.9632C50.7296 42.9632 46.3571 39.5509 46.3571 33.93L46.34 33.8789ZM181.396 35.639H193.187V31.6646H181.413V25.3226H195.347V21.3482H177.097V46.4664H195.625V42.492H181.413L181.396 35.639ZM282.282 38.8696L270.208 21.3539H265.751V46.472H270.072L270.106 28.7292L282.282 46.472H286.655V21.3539H282.339L282.282 38.8696ZM254.737 46.4209H259.053V21.3539H254.737V46.4209ZM203.395 33.8789C203.395 28.116 207.433 24.8514 212.469 24.8514C215.065 24.9041 217.598 25.6573 219.802 27.0316V22.7449C217.428 21.505 214.795 20.8418 212.117 20.8088C205.062 20.8088 199.073 25.7314 199.073 33.8675C199.073 41.8163 205.074 46.9263 212.378 46.9263C215.019 46.9077 217.617 46.2575 219.955 45.0299V40.7773C217.81 42.1011 215.351 42.8301 212.832 42.8894C207.767 42.9632 203.412 39.5509 203.412 33.93L203.395 33.8789ZM236.663 20.8202C229.12 20.8202 223.681 26.3049 223.681 33.8789C223.681 41.453 229.12 46.9376 236.663 46.9376C244.205 46.9376 249.65 41.4586 249.65 33.8789C249.65 26.2992 244.228 20.8599 236.68 20.8599L236.663 20.8202ZM236.663 42.9235C231.61 42.9235 227.963 39.1251 227.963 33.8902C227.963 28.6554 231.61 24.8627 236.663 24.8627C241.716 24.8627 245.368 28.6554 245.368 33.8902C245.368 39.1251 241.733 42.9632 236.68 42.9632L236.663 42.9235ZM309.068 21.3142L306.799 29.1721H306.76L304.531 21.3142H301.65V31.6248H303.487V23.7669H303.555C303.555 23.7669 303.986 25.4702 304.349 26.6909L305.824 31.6646H307.735L309.21 26.6909C309.607 25.3907 310.038 23.7669 310.038 23.7669H310.111V31.6646H311.983V21.3539L309.068 21.3142ZM291.487 23.0175H294.731V31.6362H296.744V23.0459H299.983V21.3425H291.476L291.487 23.0175Z" />
-                        <path d="M5.31185 17.7031C5.11982 16.9054 5.02273 16.0879 5.02261 15.2674C5.02261 12.5501 6.10082 9.94415 8.02004 8.02276C9.93925 6.10137 12.5423 5.02196 15.2565 5.02196C17.9706 5.02196 20.5736 6.10137 22.4929 8.02276C24.4121 9.94415 25.4903 12.5501 25.4903 15.2674C25.4911 16.0883 25.3921 16.9062 25.1954 17.7031H30.2995C30.4318 16.8979 30.4981 16.0833 30.498 15.2674C30.421 11.2685 28.7801 7.45936 25.9281 4.65858C23.076 1.85779 19.2402 0.288818 15.2451 0.288818C11.25 0.288818 7.41425 1.85779 4.56216 4.65858C1.71007 7.45936 0.0692133 11.2685 -0.00781235 15.2674C-0.00792956 16.0833 0.0584591 16.8979 0.190686 17.7031H5.31185Z" />
-                        <path d="M17.7604 34.9178V30.3132C20.4698 29.852 23.0053 28.6692 25.1008 26.889C27.1963 25.1088 28.7746 22.7968 29.6701 20.1956H24.203C23.5274 21.4263 22.6072 22.5055 21.4992 23.3667C20.3912 24.228 19.1188 24.853 17.7604 25.2033V20.2126H12.73V25.2033C11.371 24.8564 10.0973 24.2346 8.98738 23.3763C7.87744 22.518 6.95474 21.4414 6.27608 20.2126H0.820312C1.71837 22.8107 3.29779 25.1191 5.39311 26.8962C7.48844 28.6732 10.0226 29.8534 12.73 30.3132V34.9008C10.1058 35.4783 7.75685 36.9345 6.07099 39.029C4.38513 41.1235 3.4632 43.731 3.45746 46.4209H8.47655C8.52751 44.6591 9.26238 42.9866 10.5251 41.7585C11.7879 40.5304 13.4791 39.8434 15.2396 39.8434C17 39.8434 18.6912 40.5304 19.954 41.7585C21.2167 42.9866 21.9516 44.6591 22.0026 46.4209H27.016C27.0083 43.736 26.0874 41.1338 24.405 39.0429C22.7226 36.952 20.3791 35.4971 17.7604 34.9178Z" />
-                     </g>
-                     <defs>
-                        <clipPath id="clip0_264_1775">
-                           <rect width="312" height="47" fill="white" />
-                        </clipPath>
-                     </defs>
-                  </svg> -->
-               </a>
-            </div>
-            <div class="col-6 text-end">
-               <nav>
-                  <div class="nav-movil">
-                    <a id="nav-boton" href="#!">
-                      <span></span>
-                    </a>
-                  </div>
-                  <ul class="nav-menu">
-                     <li><a href="./">Home</a></li>
-                     <li><a href="#">About</a></li>
-                     <!--<li> <a href="#">Servicios</a>
-                        <ul class="nav-submenu">
-                           <li><a href="/programacion">Programación</a></li>
-                           <li><a href="/diseno">Diseño</a></li>
-                           <li><a href="/hosting">Hosting</a></li> 
-                        </ul> 
-                     </li>-->
-                     <li><a href="#">Services</a></li>
-                     <li><a href="#">Contact</a></li>
+            <div class="col-10">
+               <section class="menu">
+                  <img src="images/logo.png" id="logo" style="width: 250px;height: auto;" />
+
+                  
+                  <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+                  <input type="checkbox" id="toggle-1">
+                  
+                  <nav>
+                  <ul>
+                  <li><a href="#"><i class="icon-home"></i>Home</a></li>
+                  <li><a href="#"><i class="icon-user"></i>About</a></li>
+                  <li><a href="#"><i class="icon-gear"></i>Services</a></li>
+                  <li><a href="#"><i class="icon-phone"></i>Contact</a></li>
                   </ul>
-               </nav>
-               <!--<a href="#take-action" class="btn">Take Action</a>-->
+                  </nav>
+               </section>
             </div>
+            <div class="col-2 text-end  btn-action">
+               <a href="#take-action" class="btn">Take Action</a>
+            </div>
+
+
          </div>
       </div>
    </header>
@@ -112,6 +88,7 @@
                   </div>
                   <div class="col-lg-5">
                      <img class="home-img" src="images/mundo.png">                  
+                  </div>
                </div>
             </div>
          </div>
@@ -679,10 +656,17 @@
       </section>
 
       <section class="breathe-space">
-         <div class="breathe-space1">
-            <center><img src="images/bg_img_space.png" class="img-fluid breathe-space1-img" /></center>
 
+            
+         <div style="text-align: center;">
+            <img class="three-columns" src="images/breathe_space_1.png"/>
+            <img class="three-columns" src="images/breathe_space_2.png"/>
+            <img class="three-columns" src="images/breathe_space_3.png"/>
+            <img class="three-columns" src="images/breathe_space_4.png"/>
+            <img class="three-columns" src="images/breathe_space_5.png"/>
+            <img class="three-columns" src="images/breathe_space_6.png"/>
          </div>
+                    
       </section>
 
       <section class="why content light">
@@ -985,41 +969,34 @@
    <footer>
       <div class="container">
          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
                <img src="images/logo.png" style="width: 250px;height: auto;" />
             </div>
-            <div class="col-6 d-block d-md-none">
-               <a data-bs-toggle="modal" href="#" data-bs-target="#" role="button">Cookies Policy</a><br />
-               <a data-bs-toggle="modal" href="#" data-bs-target="#" role="button">Privacy Policy</a><br />
-               <a data-bs-toggle="modal" href="#" data-bs-target="#" role="button">Terms and Conditions</a><br />
-               <a data-bs-toggle="modal" href="#" data-bs-target="#" role="button">Environmental Policy</a><br />
-               <a href="#take-action">Join the list</a>
+            <div class="col-md-6 mb-30">
+               <h3 class="title-footer">Join the community.<br>
+                  Change the world.</h3>
             </div>
-            <div class="col-6 d-block d-md-none social-mobile">
-               <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in me-1 fa-lg"></i> LinkedIn</a><br />
-               <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter me-1 fa-lg"></i> Twitter</a>
-            </div>
+            <div class="col-md-6">
+               <div class="site-footer__social" style="text-align: center;">
+                  <a href="#" target="_blank"><img src="images/discord.png"/></a>
+                  <a href="#" target="_blank"><img src="images/reddi.png"/></a>
+                  <a href="#" target="_blank"><img src="images/twitter.png"/></a>
+                  <a href="#" target="_blank"><img src="images/instagram.png"/></a>
+                  <a href="#" target="_blank"><img src="images/telegram.png"/></a>
+                  <a href="#" target="_blank"><img src="images/facebook.png"/></a>
+               </div>
 
-
-            <div class="col-md-2 d-none d-md-block">
-               <a data-bs-toggle="modal" href="#" data-bs-target="#" role="button">Cookies Policy</a><br />
-               <a data-bs-toggle="modal" href="#" data-bs-target="#" role="button">Privacy Policy</a>
-            </div>
-            <div class="col d-none d-md-block ps-5 pe-0">
-               <a data-bs-toggle="modal" href="#" data-bs-target="#" role="button">Terms and Conditions</a><br />
-               <a data-bs-toggle="modal" href="#" data-bs-target="#" role="button">Environmental Policy</a>
-            </div>
-            <div class="col-md-2 d-none d-md-block ps-0">
-               <a href="#take-action">Join the list</a>
-            </div>
-            <div class="col-md-1 d-none d-md-block pe-0">
-               <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in me-1 fa-lg"></i> LinkedIn</a><br />
-               <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter me-1 fa-lg"></i> Twitter</a>
+               <h3 class="title-footer1">Join 10k people working together to make the world a better place.</h3>
             </div>
          </div>
          <div class="row copyright">
-            <div class="col-md-12">
+            <div class="col-md-6">
                <p>Eco-Planet &copy; 2022. All rights reserved.</p>
+            </div>
+            <div class="col-md-6" style="text-align: right;">
+               <a data-bs-toggle="modal" href="#privacypolicy" data-bs-target="#privacypolicy" role="button" class="mbe-30">Privacy Policy</a>
+               <a data-bs-toggle="modal" href="#cookiespolicy" data-bs-target="#cookiespolicy" role="button" class="mbe-30">Cookies Policy</a>
+               <a data-bs-toggle="modal" href="#termsandconditions" data-bs-target="#termsandconditions" role="button" class="mbe-30">Terms and Conditions</a>
             </div>
          </div>
       </div>

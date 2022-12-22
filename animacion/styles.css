@@ -2771,6 +2771,7 @@ label {
   transition             : box-shadow 100ms ease;
   line-height            : 1em;
   font-weight            : 700;
+
 }
 
 .btn:hover {
@@ -3605,8 +3606,8 @@ label {
   -webkit-align-items   : center;
   -ms-flex-align        : center;
   align-items           : center;
-  /*background: url('bg.jpg') no-repeat fixed !important;*/
-  background: linear-gradient(79.29deg, #000202 5.49%, #020D11 75.79%);
+  background: url('../images/bg_intro.png') no-repeat fixed !important;
+  /*background: linear-gradient(79.29deg, #000202 5.49%, #020D11 75.79%);*/
   background-attachment: fixed;
   background-size: cover !important;
   background-position: center center !important;
@@ -9798,4 +9799,14 @@ label {
 
 ::-webkit-scrollbar {
   display: none !important;
+}
+
+.logo-div{
+  margin:60px auto; 
+  display:flex;
+  justify-content: center;
+}
+.logo-img{
+  width: 150px;
+  height: auto;
 }
